@@ -1,1 +1,1 @@
-@echostr
+json.echostr @echostr

@@ -1,14 +1,10 @@
-class HomeController < ApplicationController
-  before_filter :authenticate_user! , except: [:weixin_token]
-
-  def index
-  end
+class WeixinapiController < ApplicationController
 
   def weixin_token
   	@signature = params[:signature]
   	@timestamp = params[:timestamp]
   	@nonce = params[:nonce]
   	@echostr = params[:echostr]
-  	puts @echostr
   end
+
 end

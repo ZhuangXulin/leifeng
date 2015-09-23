@@ -1,0 +1,2 @@
+module WeixinapiHelper
+end
